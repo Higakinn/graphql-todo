@@ -1,0 +1,9 @@
+version: "2"
+services:
+  todo:
+    build: .
+    tty: true
+    volumes:
+      - ./:/mnt
+    ports:
+      - 8081:8080
